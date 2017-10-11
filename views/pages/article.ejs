@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body>
+        <% if(action == 'show'){ %>
+            <% include ../partials/showArticle %>
+        <% } else if(action == 'edit'){ %>
+            <% include ../partials/editArticle %>
+        <% } else { %>
+            <% include ../partials/addArticle %>
+        <%  } %>
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+    </body>
+</html>
